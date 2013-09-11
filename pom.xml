@@ -20,7 +20,9 @@
             <url>http://server.kjellern.net/repo/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     <build>
         <plugins>
             <plugin>
