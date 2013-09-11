@@ -2,8 +2,10 @@ package net.theunnameddude.mcclient.protocol.packets;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
+import lombok.ToString;
 import net.theunnameddude.mcclient.protocol.PacketHandler;
 
+@ToString
 public class PacketFCEncryptionResponse extends BasePacket {
 
     private byte[] sharedSecret;

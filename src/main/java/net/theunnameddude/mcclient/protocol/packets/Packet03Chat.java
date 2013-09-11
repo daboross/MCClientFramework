@@ -2,10 +2,12 @@ package net.theunnameddude.mcclient.protocol.packets;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
+import lombok.ToString;
 import net.theunnameddude.mcclient.protocol.PacketHandler;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+@ToString
 public class Packet03Chat extends BasePacket {
     JSONObject message;
     public Packet03Chat() {
