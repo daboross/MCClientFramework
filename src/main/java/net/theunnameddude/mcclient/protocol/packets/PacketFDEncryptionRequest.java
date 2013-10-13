@@ -13,7 +13,7 @@ public class PacketFDEncryptionRequest extends BasePacket {
     byte[] verifyToken;
 
     public PacketFDEncryptionRequest() {
-        super( 0xFD );
+        super( 0xFD, "encryption-request" );
     }
 
     @Override
