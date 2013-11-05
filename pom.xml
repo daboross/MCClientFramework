@@ -3,7 +3,7 @@
 
     <groupId>net.theunnameddude</groupId>
     <artifactId>mc-protocol-framework</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
+    <version>1.1.1</version>
     <packaging>jar</packaging>
 
     <name>MC Client Framework</name>
@@ -15,7 +15,7 @@
         <url>https://github.com/daboross/MCClientFramework.git</url>
         <connection>scm:git:https://github.com/daboross/MCClientFramework.git</connection>
         <developerConnection>scm:git:git@github.com:daboross/MCClientFramework.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>mc-protocol-framework-1.1.1</tag>
     </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
