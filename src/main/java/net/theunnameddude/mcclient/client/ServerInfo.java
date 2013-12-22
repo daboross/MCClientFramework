@@ -1,5 +1,8 @@
 package net.theunnameddude.mcclient.client;
 
+import lombok.ToString;
+
+@ToString
 public class ServerInfo {
     int entityId;
     short difficulty;
