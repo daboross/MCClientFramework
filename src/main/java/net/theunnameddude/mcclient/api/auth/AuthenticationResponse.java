@@ -18,15 +18,15 @@ public class AuthenticationResponse {
     String sessionId;
 
     public AuthenticationResponse(JSONObject obj) {
-        try {
+        // try {
             this.accessToken = obj.getString( "accessToken" );
             this.clientToken = obj.getString( "clientToken" );
             JSONObject selectedProfile = obj.getJSONObject( "selectedProfile" );
             this.profileId = selectedProfile.getString( "id" );
             this.username = selectedProfile.getString( "name" );
-        } catch ( JSONException e ) {
-            e.printStackTrace();
-        }
+        // } catch ( JSONException e ) {
+        //     e.printStackTrace();
+        // }
     }
 
     public AuthenticationResponse(String username, String sessionId) {
