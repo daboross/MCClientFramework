@@ -21,8 +21,8 @@ public class Authenticator {
         return new AuthenticationResponse( username );
     }
 
-    public static AuthenticationResponse sendRequest(String username, String password) {
-        try {
+    public static AuthenticationResponse sendRequest(String username, String password) throws IOException {
+        // try {
             HttpURLConnection urlConnection = null;
                 JSONObject request = new JSONObject();
                 try {
@@ -48,14 +48,14 @@ public class Authenticator {
             JSONObject jsonObject = new JSONObject( line );
             return new AuthenticationResponse( jsonObject );
 
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        return null;
+        // } catch (MalformedURLException e) {
+        //     e.printStackTrace();
+        // } catch (IOException e) {
+        //     e.printStackTrace();
+        // } catch (JSONException e) {
+        //     e.printStackTrace();
+        // }
+        // return null;
     }
     public static AuthenticationResponse update(String accessToken, String clientToken) {
         JSONObject request = new JSONObject();
